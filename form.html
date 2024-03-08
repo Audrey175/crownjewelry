@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/Logo.png" type="image/png" />
+  <title>CROWN Jewelry</title>
+ <style>
+    form *{
+        text-align: center;
+    }
+    .navmenu{
+    display: flex;
+  }
+  .navmenu a{
+    color:#2c2c2c;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 400;
+    transition: all .42s ease;
+  }
+  .navmenu a:hover{
+    color: #EE1C47;
+  }
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: rgb(217, 107, 11);
+}
+ </style>
+</head>
+<body>
+    <header>
+      <a href="index.html">
+        <img src="Logo.png" width="150px" alt="">
+      </a>
+
+      <ul class="navmenu" >
+        <a href="index.html">Home</a>
+        <a href="index.html#product">Our Products</a>          
+        <a href="index.html#contact">Contact</a>
+        <a href="form.html">Shop now</a>
+        </ul>
+
+      
+    </header>
+    <br>
+    <br>
+
+    <img src="Formbaner.png" width="100%" alt="">
+
+    <br>
+    <br>
+    <center>
+        <main style="width: 700px; justify-content: center; align-items: center;">
+            <section id="form-order" width="500px">
+              <h1>🛒 Order Form 🛒</h1>
+        
+              <form action="form-processing" method="post" id="item-list">
+                <fieldset>
+                  <legend><strong>PERSONAL INFORMATION</strong></legend>
+                  <label for="fname">First name: </label>
+                  <input type="text" id="fname" name="First name" required>
+                  <br>
+                  <br>
+                  <label for="lname">Last name: </label>
+                  <input type="text" id="lname" name="Last name" required>
+                  <br>
+                  <br>
+                  <label for="dob">Date of birth:</label>
+                  <input type="date" id="dob" name="Date of birth" required>
+                  <br>
+                </fieldset>
+      
+                <br>
+                <br>
+      
+                <fieldset>
+                  <legend><strong>SHIPPING INFORMATION</strong></legend>
+                  <label for="address">Address:</label>
+                  <input type="text" id="address" name="Address" required>
+                  <br>
+                  <br>
+                  <label for="district">District:</label>
+                  <select name="District" id="district">
+                    <option value="">Select the district</option>
+                    <option value="1">District 1</option>
+                    <option value="2">District 2</option>
+                    <option value="3">District 3</option>
+                  </select>
+      
+                  <br>
+                  <br>
+                  <label for="city">City:</label>
+                  <select name="City" id="city">
+                    <option value="">Select a city</option>
+                    <option value="HCMC">Ho Chi Minh</option>
+                    <option value="Hanoi">Ha Noi</option>
+                    <option value="Da Nang">Da Nang</option>
+                  </select>
+      
+                  <br>
+                  <br>
+                  <label for="postcode">Postcode</label>
+                  <input type="text" id="postcode" name="Postcode" required>
+                </fieldset>
+      
+                <br>
+                <br>
+                <fieldset>
+                  <legend><strong>PURCHASE OPTIONS</strong></legend>
+                  <p><strong>Select product(s): </strong></p>
+                  <table>
+                    <tr>
+                      <td>
+                        <input type="checkbox" name="Product" value="BOW PEARL EARRINGS"> BOW PEARL EARRINGS <br>
+                      </td>
+      
+                      <td>
+                        <input type="checkbox" name="Product" value="CANDY EARRINGS"> CANDY EARRINGS <br>
+                      </td>
+      
+                      <td>
+                        <input type="checkbox" name="Product" value="COLOR HALO RECTANGLE EARRINGS"> COLOR HALO RECTANGLE EARRINGS<br>
+                      </td>
+      
+                      <td>
+                        <input type="checkbox" name="Product" value="BABY PEARL"> BAYBY PEARL <br>
+                      </td>
+                    </tr>
+      
+                    <tr>
+                      <td>
+                        <input type="checkbox" name="Product" value="AUTUMN LEAF EARRINGS"> AUTUMN LEAF EARRINGS <br>
+                      </td>
+      
+                      <td>
+                        <input type="checkbox" name="Product" value="AQUAMARINE DAHLIA RING"> AQUAMARINE DAHLIA RING <br>
+                      </td>
+      
+                      <td>
+                        <input type="checkbox" name="Product" value="ANCHOR BRACELET"> ANCHOR BRACELET <br>
+                      </td>
+      
+                      <td>
+                        <input type="checkbox" name="Product" value="ALEXANDRITE CYCLE BRACELET"> ALEXANDRITE CYCLE BRACELET <br>
+                      </td>
+                    </tr>
+      
+                    </table>
+                </fieldset>
+      
+                <br>
+                <br>     
+                  <button  class="button">Order now</button>
+              </form>
+            </section>
+          </main>
+
+    </center>
+    
+  
+</body>
+</html>
